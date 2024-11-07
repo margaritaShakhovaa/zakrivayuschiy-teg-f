@@ -20,8 +20,8 @@
   <body class="page">
 
     <header class="header section">
-      <h1 class="header__title">&lt;/html&gt;</h1>
-      <p class="header__subtitle">закрывающий тег</p>
+      <a class="header__logo">&lt;/html&gt;</a>
+      <h1 class="header__title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -298,11 +298,11 @@
           </svg>
           <h2 class="modal__title">Вставьте дискету, чтобы продолжить</h2>
         </div>
-        <button class="modal-button button"
-                type="button"
-                onclick="window['dialog-id'].close()">
-          <span class="button__text">OK</span>
-        </button>
+        <form method="dialog">
+          <button class="modal-button button" type="submit">
+            <span class="button__text">OK</span>
+          </button>
+        </form>
       </dialog>
 
     </main>
